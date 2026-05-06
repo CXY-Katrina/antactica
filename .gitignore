@@ -1,0 +1,15 @@
+resources/
+
+.chrome-tmp/
+.codex-static-server.*
+
+daily_journal_text.txt
+daily_program_text.txt
+team_members_contact.html
+team_members_contact.png
+team_pdf_page.png
+team_pdf_page1.png
+team_pdf_render.html
+team_pdf_streams.txt
+team_pdf_text_chunks.txt
+weather_text.txt

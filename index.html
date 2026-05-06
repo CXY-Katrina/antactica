@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/reveal.css">
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.13.3/mapbox-gl.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="css/theme.css?v=20260506-13">
+    <link rel="stylesheet" href="css/theme.css?v=20260506-16">
   </head>
   <body>
     <div class="reveal">
@@ -116,11 +116,456 @@
             </aside>
           </div>
         </section>
+        <section class="day-title-slide" data-background-color="#002b36">
+          <div class="day-title-grid" aria-label="Day 1 布宜诺斯艾利斯">
+            <div class="day-kicker">Day 1</div>
+            <div class="text-box day-cn-title" lang="zh-CN">阿根廷 · 布宜诺斯艾利斯</div>
+            <div class="text-box day-en-title" lang="en">Argentina · Buenos Aires</div>
+          </div>
+        </section>
+        <section class="buenos-day-slide" data-background-color="#002b36">
+          <div class="buenos-layout" aria-label="布宜诺斯艾利斯第一天行程">
+            <header class="buenos-header">
+              <span>Day 1 · 02-19</span>
+              <h2>在一场大罢工中抵达布宜诺斯艾利斯</h2>
+            </header>
+            <ol class="buenos-timeline">
+              <li style="--delay: 0.1s;">
+                <span class="route-dot"></span>
+                <div>
+                  <time>Morning</time>
+                  <strong>Teatro Colon 大剧院</strong>
+                  <p>1908 年开放，是世界著名歌剧院之一，以声学效果和欧洲折衷主义建筑闻名。</p>
+                </div>
+              </li>
+              <li style="--delay: 0.2s;">
+                <span class="route-dot"></span>
+                <div>
+                  <time>Late morning</time>
+                  <strong>El Ateneo Grand Splendid 雅典人图书馆</strong>
+                  <p>前身是 1919 年开幕的剧院，后来改造为书店，舞台、包厢和穹顶壁画仍保留下来。</p>
+                </div>
+              </li>
+              <li style="--delay: 0.3s;">
+                <span class="route-dot"></span>
+                <div>
+                  <time>Lunch</time>
+                  <strong>Santos Manjares 阿根廷牛排</strong>
+                  <p>用 parrilla 烤架和牛肉文化认识阿根廷，第一顿正餐从一块牛排开始。</p>
+                </div>
+              </li>
+              <li style="--delay: 0.4s;">
+                <span class="route-dot"></span>
+                <div>
+                  <time>Afternoon</time>
+                  <strong>Plaza de Mayo 五月广场</strong>
+                  <p>布宜诺斯艾利斯的政治中心，见证独立运动、总统府集会和现代阿根廷公共生活。</p>
+                </div>
+              </li>
+              <li style="--delay: 0.5s;">
+                <span class="route-dot"></span>
+                <div>
+                  <time>Afternoon</time>
+                  <strong>La Boca 博卡社区</strong>
+                  <p>港口移民社区，以彩色街屋、探戈街头表演和足球文化成为城市最鲜明的表情之一。</p>
+                </div>
+              </li>
+              <li style="--delay: 0.6s;">
+                <span class="route-dot"></span>
+                <div>
+                  <time>Afternoon</time>
+                  <strong>La Bombonera 糖果盒球场</strong>
+                  <p>Boca Juniors 主场，陡峭看台和高密度声浪让它成为南美足球文化的象征。</p>
+                </div>
+              </li>
+              <li style="--delay: 0.7s;">
+                <span class="route-dot"></span>
+                <div>
+                  <time>Sunset</time>
+                  <strong>Puente de la Mujer 女人桥</strong>
+                  <p>从港口贸易梦到现代城市图标，Puerto Madero 展示了布宜诺斯艾利斯不断重塑自己的方式。</p>
+                </div>
+              </li>
+              <li style="--delay: 0.8s;">
+                <span class="route-dot"></span>
+                <div>
+                  <time>Evening</time>
+                  <strong>Mate & Tango show</strong>
+                  <p>最后用马黛茶和探戈收束这一天。幸运的是，罢工只持续 24 小时，过了 0 点后，我们得以正常飞往乌斯怀亚。</p>
+                </div>
+              </li>
+            </ol>
+            <div class="buenos-photo-grid" aria-label="照片占位">
+              <figure class="photo-slot">
+                <input id="photo-teatro-colon" type="checkbox" class="photo-toggle">
+                <label class="photo-thumb photo-empty" for="photo-teatro-colon" data-gallery-dir="resources/day1/teatro_colon/" data-gallery-title="Teatro Colon">
+                  <span>Loading</span>
+                  <figcaption>Teatro Colon</figcaption>
+                </label>
+                <div class="photo-lightbox photo-gallery" data-gallery-dir="resources/day1/teatro_colon/" data-gallery-title="Teatro Colon" aria-label="Teatro Colon 照片轮播">
+                  <label class="photo-backdrop" for="photo-teatro-colon"></label>
+                  <button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button>
+                  <div class="gallery-frame"></div>
+                  <button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button>
+                </div>
+              </figure>
+              <figure class="photo-slot">
+                <input id="photo-el-ateneo" type="checkbox" class="photo-toggle">
+                <label class="photo-thumb photo-empty" for="photo-el-ateneo" data-gallery-dir="resources/day1/el_ateneo/" data-gallery-title="El Ateneo">
+                  <span>Pending</span>
+                  <figcaption>El Ateneo</figcaption>
+                </label>
+                <div class="photo-lightbox photo-gallery" data-gallery-dir="resources/day1/el_ateneo/" data-gallery-title="El Ateneo">
+                  <label class="photo-backdrop" for="photo-el-ateneo"></label>
+                  <button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button>
+                  <div class="gallery-frame"></div>
+                  <button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button>
+                </div>
+              </figure>
+              <figure class="photo-slot">
+                <input id="photo-santos" type="checkbox" class="photo-toggle">
+                <label class="photo-thumb photo-empty" for="photo-santos" data-gallery-dir="resources/day1/santos_manjares/" data-gallery-title="Santos Manjares">
+                  <span>Pending</span>
+                  <figcaption>Santos Manjares</figcaption>
+                </label>
+                <div class="photo-lightbox photo-gallery" data-gallery-dir="resources/day1/santos_manjares/" data-gallery-title="Santos Manjares">
+                  <label class="photo-backdrop" for="photo-santos"></label>
+                  <button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button>
+                  <div class="gallery-frame"></div>
+                  <button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button>
+                </div>
+              </figure>
+              <figure class="photo-slot">
+                <input id="photo-plaza" type="checkbox" class="photo-toggle">
+                <label class="photo-thumb photo-empty" for="photo-plaza" data-gallery-dir="resources/day1/plaza_de_mayo/" data-gallery-title="Plaza de Mayo">
+                  <span>Pending</span>
+                  <figcaption>Plaza de Mayo</figcaption>
+                </label>
+                <div class="photo-lightbox photo-gallery" data-gallery-dir="resources/day1/plaza_de_mayo/" data-gallery-title="Plaza de Mayo">
+                  <label class="photo-backdrop" for="photo-plaza"></label>
+                  <button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button>
+                  <div class="gallery-frame"></div>
+                  <button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button>
+                </div>
+              </figure>
+              <figure class="photo-slot">
+                <input id="photo-la-boca" type="checkbox" class="photo-toggle">
+                <label class="photo-thumb photo-empty" for="photo-la-boca" data-gallery-dir="resources/day1/la_boca/" data-gallery-title="La Boca">
+                  <span>Pending</span>
+                  <figcaption>La Boca</figcaption>
+                </label>
+                <div class="photo-lightbox photo-gallery" data-gallery-dir="resources/day1/la_boca/" data-gallery-title="La Boca">
+                  <label class="photo-backdrop" for="photo-la-boca"></label>
+                  <button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button>
+                  <div class="gallery-frame"></div>
+                  <button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button>
+                </div>
+              </figure>
+              <figure class="photo-slot">
+                <input id="photo-bombonera" type="checkbox" class="photo-toggle">
+                <label class="photo-thumb photo-empty" for="photo-bombonera" data-gallery-dir="resources/day1/la_bombonera/" data-gallery-title="La Bombonera">
+                  <span>Pending</span>
+                  <figcaption>La Bombonera</figcaption>
+                </label>
+                <div class="photo-lightbox photo-gallery" data-gallery-dir="resources/day1/la_bombonera/" data-gallery-title="La Bombonera">
+                  <label class="photo-backdrop" for="photo-bombonera"></label>
+                  <button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button>
+                  <div class="gallery-frame"></div>
+                  <button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button>
+                </div>
+              </figure>
+              <figure class="photo-slot">
+                <input id="photo-puente" type="checkbox" class="photo-toggle">
+                <label class="photo-thumb photo-empty" for="photo-puente" data-gallery-dir="resources/day1/puente_de_la_mujer/" data-gallery-title="Puente de la Mujer">
+                  <span>Pending</span>
+                  <figcaption>Puente de la Mujer</figcaption>
+                </label>
+                <div class="photo-lightbox photo-gallery" data-gallery-dir="resources/day1/puente_de_la_mujer/" data-gallery-title="Puente de la Mujer">
+                  <label class="photo-backdrop" for="photo-puente"></label>
+                  <button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button>
+                  <div class="gallery-frame"></div>
+                  <button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button>
+                </div>
+              </figure>
+              <figure class="photo-slot">
+                <input id="photo-mate-tango" type="checkbox" class="photo-toggle">
+                <label class="photo-thumb photo-empty" for="photo-mate-tango" data-gallery-dir="resources/day1/mate_tango/" data-gallery-title="Mate & Tango">
+                  <span>Pending</span>
+                  <figcaption>Mate & Tango</figcaption>
+                </label>
+                <div class="photo-lightbox photo-gallery" data-gallery-dir="resources/day1/mate_tango/" data-gallery-title="Mate & Tango">
+                  <label class="photo-backdrop" for="photo-mate-tango"></label>
+                  <button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button>
+                  <div class="gallery-frame"></div>
+                  <button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section class="day-title-slide" data-background-color="#002b36">
+          <div class="day-title-grid" aria-label="Day 2 乌斯怀亚">
+            <div class="day-kicker">Day 2-3</div>
+            <div class="text-box day-cn-title" lang="zh-CN">阿根廷 · 乌斯怀亚</div>
+            <div class="text-box day-en-title" lang="en">Argentina · Ushuaia</div>
+          </div>
+        </section>
+        <section class="buenos-day-slide ushuaia-day-slide" data-background-color="#002b36">
+          <div class="buenos-layout ushuaia-layout" aria-label="乌斯怀亚第二天行程">
+            <header class="buenos-header">
+              <span>Day 2-3 · 02-20 / 02-21</span>
+              <h2>抵达世界尽头的海港城市</h2>
+              <p>乌斯怀亚位于火地岛南岸、比格尔海峡北侧，是火地岛省的首府。它从早期传教点、流放地监狱和海军据点逐渐发展为今天的港口城市，也是许多南极航线的起点。</p>
+            </header>
+            <ol class="buenos-timeline ushuaia-timeline">
+              <li style="--delay: 0.1s;">
+                <span class="route-dot"></span>
+                <div>
+                  <time>Day 2 afternoon</time>
+                  <strong>城市游览</strong>
+                  <p>这是一座非常小的海港城市，山和海把城区压得很窄，生活几乎围绕一条主干道展开。港口停靠着邮轮、探险船和补给船，城市感很朴素，却因为南极航线、风雪和远山有一种“旅程边界”的气质。</p>
+                </div>
+              </li>
+              <li style="--delay: 0.34s;">
+                <span class="route-dot"></span>
+                <div>
+                  <time>Day 3 morning</time>
+                  <strong>火地岛国家公园</strong>
+                  <p>公园位于阿根廷国土最南端，与智利隔着比格尔海峡相望。森林、湖泊、泥炭地和海湾交织在一起，这里的风景不是开阔的热闹，而是冷、湿、安静的边境感。</p>
+                </div>
+              </li>
+            </ol>
+            <div class="buenos-photo-grid ushuaia-photo-grid" aria-label="乌斯怀亚照片占位">
+              <figure class="photo-slot">
+                <input id="photo-ushuaia-city" type="checkbox" class="photo-toggle">
+                <label class="photo-thumb photo-empty" for="photo-ushuaia-city" data-gallery-dir="resources/day2/city_tour/" data-gallery-title="City Tour">
+                  <span>Pending</span>
+                  <figcaption>City Tour</figcaption>
+                </label>
+                <div class="photo-lightbox photo-gallery" data-gallery-dir="resources/day2/city_tour/" data-gallery-title="City Tour">
+                  <label class="photo-backdrop" for="photo-ushuaia-city"></label>
+                  <button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button>
+                  <div class="gallery-frame"></div>
+                  <button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button>
+                </div>
+              </figure>
+              <figure class="photo-slot">
+                <input id="photo-tierra-fuego" type="checkbox" class="photo-toggle">
+                <label class="photo-thumb photo-empty" for="photo-tierra-fuego" data-gallery-dir="resources/day2/tierra_del_fuego/" data-gallery-title="Tierra del Fuego National Park">
+                  <span>Pending</span>
+                  <figcaption>Tierra del Fuego National Park</figcaption>
+                </label>
+                <div class="photo-lightbox photo-gallery" data-gallery-dir="resources/day2/tierra_del_fuego/" data-gallery-title="Tierra del Fuego National Park">
+                  <label class="photo-backdrop" for="photo-tierra-fuego"></label>
+                  <button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button>
+                  <div class="gallery-frame"></div>
+                  <button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section class="day-title-slide" data-background-color="#002b36">
+          <div class="day-title-grid" aria-label="Day 4-16 启航南极圈">
+            <div class="day-kicker">Day 4-16</div>
+            <div class="text-box day-cn-title" lang="zh-CN">启航 · 南极圈之旅</div>
+            <div class="text-box day-en-title" lang="en">Quest for the Antarctic Circle</div>
+          </div>
+        </section>
+        <section class="operator-slide" data-background-color="#002b36">
+          <div class="operator-layout" aria-label="Tour Operator and passenger overview">
+            <header class="crew-header operator-hero">
+              <span>Day 4-16</span>
+              <h2>Tour Operator &amp; Crew Member</h2>
+            </header>
+            <div class="operator-photo">
+              <img src="resources/g_adventure/IMG_20260223_180243.jpg" alt="G Adventures expedition group">
+            </div>
+            <div class="operator-summary">
+              <span>Tour Operator</span>
+              <strong>G Adventures</strong>
+              <p>负责本次南极圈航线的探险旅行运营，组织船上讲座、登陆、冲锋艇巡航和极地体验。</p>
+            </div>
+            <div class="operator-stats">
+              <div><span>Crew member</span><strong>75</strong></div>
+              <div><span>Passengers</span><strong>124</strong></div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <section class="crew-slide" data-background-color="#002b36">
+            <div class="expedition-team-layout" aria-label="Expedition Team Member part 1">
+              <header class="crew-header">
+                <span>Day 4-16 · 1 / 2</span>
+                <h2>Expedition Team Member</h2>
+              </header>
+              <div class="team-page-grid">
+                <article class="team-card"><img src="resources/g_adventure/team_members/01_685x609.jpg" alt="Jenny Green"><div><h4>Jenny Green</h4><span>Expedition Leader · Germany / Costa Rica</span><p>南极经验丰富的探险领队，长期从事极地航线、海洋保护和自然教育。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/02_522x523.jpg" alt="Meru Ferrari"><div><h4>Meru Ferrari</h4><span>Assistant Expedition Leader · Argentina</span><p>熟悉南美旅行和极地运营，关注历史、自然与可持续旅游。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/04_685x804.jpg" alt="Mark Dunsmuir"><div><h4>Mark Dunsmuir</h4><span>Photographer in Residence · Canada</span><p>摄影师和写作者，擅长野生动物、探险摄影和影像叙事。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/15_807x832.jpg" alt="Blaise Guld"><div><h4>Blaise Guld</h4><span>Musician · United States</span><p>音乐人和极地自然向导，擅长用故事、音乐和自然体验连接旅客。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/07_670x822.jpg" alt="Eric Wong"><div><h4>Eric Wong</h4><span>Camping Master · Hong Kong</span><p>香港登山者和纪录摄影师，负责露营、户外协调和极地活动支持。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/12_667x921.jpg" alt="Vanessa Tse"><div><h4>Vanessa Tse</h4><span>Camping Assistant · Hong Kong</span><p>香港生态教育工作者，擅长自然解说、生态旅行和户外体验设计。</p></div></article>
+                <article class="team-card"><img class="rotate-cw" src="resources/g_adventure/team_members/10_354x484.jpg" alt="Sarah Keenan"><div><h4>Sarah Keenan</h4><span>Kayak Guide · Canada</span><p>来自加拿大西海岸，具备海上生态旅游、船艇操作和皮划艇带队经验。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/11_712x835.jpg" alt="Mauricio Martinez"><div><h4>Mauricio Martinez</h4><span>Kayak Master · Argentina</span><p>阿根廷皮划艇向导和自然向导，熟悉巴塔哥尼亚、瀑布和户外探险。</p></div></article>
+              </div>
+            </div>
+          </section>
+          <section class="crew-slide" data-background-color="#002b36">
+            <div class="expedition-team-layout" aria-label="Expedition Team Member part 2">
+              <header class="crew-header">
+                <span>Day 4-16 · 2 / 2</span>
+                <h2>Expedition Team Member</h2>
+              </header>
+              <div class="team-page-grid">
+                <article class="team-card"><img src="resources/g_adventure/team_members/06_456x630.jpg" alt="Pepper Cook"><div><h4>Pepper Cook</h4><span>Geologist · United States</span><p>地质与极地科研支持背景，曾在高纬度研究站和冰盖项目工作。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/08_629x850.jpg" alt="Matt Burnaby"><div><h4>Matt Burnaby</h4><span>Marine Mammals Specialist · Canada</span><p>长期从事鲸类、海洋生态教育和探险行业培训。</p></div></article>
+                <article class="team-card"><img class="rotate-cw" src="resources/g_adventure/team_members/09_1190x669.jpg" alt="Joy Le Pesquer"><div><h4>Joy Le Pesquer</h4><span>Naturalist · French-Cuban</span><p>人类学和环境研究背景，热爱科学、文化与自然观察。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/03_594x891.jpg" alt="Storm Simpson"><div><h4>Storm Simpson</h4><span>Expedition Co-ordinator · England / Canada</span><p>探险协调员，参与船上活动、登陆安排和团队运营支持。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/13_609x782.jpg" alt="Devi Rouse"><div><h4>Devi Rouse</h4><span>Naturalist · United States</span><p>长期在智利和巴塔哥尼亚工作，擅长徒步、自然解说和冲锋艇驾驶。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/14_367x434.jpg" alt="Brad"><div><h4>Brad</h4><span>Naturalist · Canada</span><p>有二十年观鲸和小船运营经验，关注鲸类保护、海洋环境和文化多样性。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/16_620x830.jpg" alt="John Kernan"><div><h4>John Kernan</h4><span>Ornithologist · United States</span><p>资深鸟类学者和探险讲师，拥有多年七大洲探险邮轮带队经验。</p></div></article>
+                <article class="team-card"><img src="resources/g_adventure/team_members/05_559x544.jpg" alt="Anastasiia Ezhova"><div><h4>Anastasiia Ezhova</h4><span>Historian · Russia</span><p>历史学者，负责分享极地探索、人文历史和航线背景。</p></div></article>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="route-pdf-slide" data-background-color="#002b36">
+          <div class="route-pdf-layout" aria-label="Route of Our Travel">
+            <header class="route-pdf-header">
+              <span>Day 4-16</span>
+              <h2>Route of Our Travel</h2>
+            </header>
+            <div class="pdf-page-frame">
+              <canvas class="route-pdf-canvas" data-pdf-page="1" aria-label="Route of Our Travel page 1"></canvas>
+            </div>
+            <div class="pdf-page-frame">
+              <canvas class="route-pdf-canvas" data-pdf-page="2" aria-label="Route of Our Travel page 2"></canvas>
+            </div>
+          </div>
+        </section>
+        <section class="weather-slide" data-background-color="#002b36">
+          <div class="weather-layout" aria-label="Weather charts">
+            <header class="route-pdf-header">
+              <span>Day 4-16</span>
+              <h2>Weather</h2>
+            </header>
+            <div class="weather-row">
+              <span>Wave</span>
+              <canvas class="weather-pdf-canvas" data-pdf-page="4" aria-label="Wave chart page 4"></canvas>
+              <canvas class="weather-pdf-canvas" data-pdf-page="6" aria-label="Wave chart page 6"></canvas>
+              <canvas class="weather-pdf-canvas" data-pdf-page="10" aria-label="Wave chart page 10"></canvas>
+              <canvas class="weather-pdf-canvas" data-pdf-page="16" aria-label="Wave chart page 16"></canvas>
+            </div>
+            <div class="weather-row">
+              <span>Wind</span>
+              <canvas class="weather-pdf-canvas" data-pdf-page="7" aria-label="Wind chart page 7"></canvas>
+              <canvas class="weather-pdf-canvas" data-pdf-page="11" aria-label="Wind chart page 11"></canvas>
+              <canvas class="weather-pdf-canvas" data-pdf-page="13" aria-label="Wind chart page 13"></canvas>
+              <canvas class="weather-pdf-canvas" data-pdf-page="15" aria-label="Wind chart page 15"></canvas>
+            </div>
+          </div>
+        </section>
+        <section class="buenos-day-slide operation-day-slide" data-background-color="#002b36">
+          <div class="buenos-layout operation-layout" aria-label="Operation Day 1">
+            <header class="buenos-header">
+              <span>Operation Day 1 · 24 Feb</span>
+              <h2>Half Moon Island &amp; Whalers Bay</h2>
+            </header>
+            <ol class="buenos-timeline operation-timeline">
+              <li><span class="route-dot"></span><div><time>Morning</time><strong>Half Moon Island</strong><p>位于 Livingston Island 和 Greenwich Island 之间，岛形如弯月，是抵达南极后的第一次登陆与巡航地点，以 Chinstrap penguin 群落闻名。</p></div></li>
+              <li><span class="route-dot"></span><div><time>Afternoon</time><strong>Whalers Bay · Deception Island</strong><p>Deception Island 是南设得兰群岛中一座火山岛，Whalers Bay 保留着捕鲸站和火山地貌，是历史与地质感都很强的登陆点。</p></div></li>
+            </ol>
+            <div class="buenos-photo-grid operation-photo-grid" aria-label="Operation Day 1 media">
+              <figure class="photo-slot"><input id="photo-op1-half-moon" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op1-half-moon" data-gallery-dir="resources/g_adventure/op_day1_half_moon_island/" data-gallery-title="Half Moon Island"><span>Pending</span><figcaption>Half Moon Island</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day1_half_moon_island/" data-gallery-title="Half Moon Island"><label class="photo-backdrop" for="photo-op1-half-moon"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+              <figure class="photo-slot"><input id="photo-op1-whalers" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op1-whalers" data-gallery-dir="resources/g_adventure/op_day1_whalers_bay/" data-gallery-title="Whalers Bay"><span>Pending</span><figcaption>Whalers Bay</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day1_whalers_bay/" data-gallery-title="Whalers Bay"><label class="photo-backdrop" for="photo-op1-whalers"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+            </div>
+          </div>
+        </section>
+        <section class="buenos-day-slide operation-day-slide" data-background-color="#002b36">
+          <div class="buenos-layout operation-layout" aria-label="Operation Day 2">
+            <header class="buenos-header"><span>Operation Day 2 · 25 Feb</span><h2>Orne Harbour &amp; Cuverville Island</h2></header>
+            <ol class="buenos-timeline operation-timeline">
+              <li><span class="route-dot"></span><div><time>Morning</time><strong>Orne Harbour</strong><p>Orne Harbour 位于 Antarctic Peninsula 西岸，冰川、山峰和海湾相互包围，适合登陆徒步和 Zodiac 近距离观察冰川环境。</p></div></li>
+              <li><span class="route-dot"></span><div><time>Afternoon</time><strong>Cuverville Island</strong><p>Cuverville Island 位于 Errera Channel，是区域内大型 Gentoo penguin 栖息地之一，岛岸与冰山构成典型南极半岛风景。</p></div></li>
+            </ol>
+            <div class="buenos-photo-grid operation-photo-grid" aria-label="Operation Day 2 media">
+              <figure class="photo-slot"><input id="photo-op2-orne" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op2-orne" data-gallery-dir="resources/g_adventure/op_day2_orne_harbour/" data-gallery-title="Orne Harbour"><span>Pending</span><figcaption>Orne Harbour</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day2_orne_harbour/" data-gallery-title="Orne Harbour"><label class="photo-backdrop" for="photo-op2-orne"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+              <figure class="photo-slot"><input id="photo-op2-cuverville" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op2-cuverville" data-gallery-dir="resources/g_adventure/op_day2_cuverville_island/" data-gallery-title="Cuverville Island"><span>Pending</span><figcaption>Cuverville Island</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day2_cuverville_island/" data-gallery-title="Cuverville Island"><label class="photo-backdrop" for="photo-op2-cuverville"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+            </div>
+          </div>
+        </section>
+        <section class="buenos-day-slide operation-day-slide" data-background-color="#002b36">
+          <div class="buenos-layout operation-layout" aria-label="Operation Day 3">
+            <header class="buenos-header"><span>Operation Day 3 · 26 Feb</span><h2>Neumayer Channel &amp; Port Lockroy</h2></header>
+            <ol class="buenos-timeline operation-timeline">
+              <li><span class="route-dot"></span><div><time>Morning</time><strong>Neumayer Channel</strong><p>Neumayer Channel 分隔 Anvers Island、Wiencke Island 与周边岛屿，航道两侧山峰和冰川密集，是南极半岛经典航行景观。</p></div></li>
+              <li><span class="route-dot"></span><div><time>Afternoon</time><strong>Port Lockroy &amp; Jougla Point</strong><p>Port Lockroy 是著名的 Penguin Post Office，曾是英国战时基地和科研站；附近 Jougla Point 适合观察企鹅、遗迹和海湾景色。</p></div></li>
+              <li><span class="route-dot"></span><div><time>Transit</time><strong>Lemaire Channel</strong><p>Lemaire Channel 以狭窄水道、陡峭山峰和漂浮冰山闻名，是南极半岛最具标志性的航行通道之一。</p></div></li>
+            </ol>
+            <div class="buenos-photo-grid operation-photo-grid" aria-label="Operation Day 3 media">
+              <figure class="photo-slot"><input id="photo-op3-neumayer" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op3-neumayer" data-gallery-dir="resources/g_adventure/op_day3_neumayer_channel/" data-gallery-title="Neumayer Channel"><span>Pending</span><figcaption>Neumayer Channel</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day3_neumayer_channel/" data-gallery-title="Neumayer Channel"><label class="photo-backdrop" for="photo-op3-neumayer"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+              <figure class="photo-slot"><input id="photo-op3-lockroy" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op3-lockroy" data-gallery-dir="resources/g_adventure/op_day3_port_lockroy_jougla_point/" data-gallery-title="Port Lockroy & Jougla Point"><span>Pending</span><figcaption>Port Lockroy</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day3_port_lockroy_jougla_point/" data-gallery-title="Port Lockroy & Jougla Point"><label class="photo-backdrop" for="photo-op3-lockroy"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+              <figure class="photo-slot"><input id="photo-op3-lemaire" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op3-lemaire" data-gallery-dir="resources/g_adventure/op_day3_lemaire_channel/" data-gallery-title="Lemaire Channel"><span>Pending</span><figcaption>Lemaire Channel</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day3_lemaire_channel/" data-gallery-title="Lemaire Channel"><label class="photo-backdrop" for="photo-op3-lemaire"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+            </div>
+          </div>
+        </section>
+        <section class="buenos-day-slide operation-day-slide" data-background-color="#002b36">
+          <div class="buenos-layout operation-layout" aria-label="Operation Day 4">
+            <header class="buenos-header"><span>Operation Day 4 · 27 Feb</span><h2>Crossing the Antarctic Circle &amp; The Gullet</h2></header>
+            <ol class="buenos-timeline operation-timeline">
+              <li><span class="route-dot"></span><div><time>Morning</time><strong>Antarctic Circle</strong><p>船只继续向南，并在上午跨越南极圈。这一刻象征着航程进入更高纬度，也是一条许多极地旅行者期待抵达的地理界线。</p></div></li>
+              <li><span class="route-dot"></span><div><time>Afternoon</time><strong>The Gullet</strong><p>The Gullet 是一段狭窄且少有船只通行的水道，冰况变化很快。当天通过 Zodiac scouting 观察冰况后，船只在冰山之间完成穿越。</p></div></li>
+            </ol>
+            <div class="buenos-photo-grid operation-photo-grid" aria-label="Operation Day 4 media">
+              <figure class="photo-slot"><input id="photo-op4-circle" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op4-circle" data-gallery-dir="resources/g_adventure/op_day4_antarctic_circle/" data-gallery-title="Antarctic Circle"><span>Pending</span><figcaption>Antarctic Circle</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day4_antarctic_circle/" data-gallery-title="Antarctic Circle"><label class="photo-backdrop" for="photo-op4-circle"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+              <figure class="photo-slot"><input id="photo-op4-gullet" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op4-gullet" data-gallery-dir="resources/g_adventure/op_day4_the_gullet/" data-gallery-title="The Gullet"><span>Pending</span><figcaption>The Gullet</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day4_the_gullet/" data-gallery-title="The Gullet"><label class="photo-backdrop" for="photo-op4-gullet"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+            </div>
+          </div>
+        </section>
+        <section class="buenos-day-slide operation-day-slide" data-background-color="#002b36">
+          <div class="buenos-layout operation-layout" aria-label="Operation Day 5">
+            <header class="buenos-header"><span>Operation Day 5 · 28 Feb</span><h2>Bongrain &amp; Lainez Points</h2></header>
+            <ol class="buenos-timeline operation-timeline">
+              <li><span class="route-dot"></span><div><time>Morning</time><strong>Bongrain &amp; Lainez Points</strong><p>Bongrain 和 Lainez Points 位于南极半岛更南段，提供开阔的冰川、山地和海岸视野，是当天登陆徒步的重要地点。</p></div></li>
+              <li><span class="route-dot"></span><div><time>Afternoon</time><strong>Dog Leg Fjord</strong><p>Dog Leg Fjord 是峡湾式冰川景观，山体、海冰和冰川共同构成强烈的南极纵深感，适合 Zodiac 探索和岸上观察。</p></div></li>
+            </ol>
+            <div class="buenos-photo-grid operation-photo-grid" aria-label="Operation Day 5 media">
+              <figure class="photo-slot"><input id="photo-op5-points" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op5-points" data-gallery-dir="resources/g_adventure/op_day5_bongrain_lainez_points/" data-gallery-title="Bongrain & Lainez Points"><span>Pending</span><figcaption>Bongrain & Lainez</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day5_bongrain_lainez_points/" data-gallery-title="Bongrain & Lainez Points"><label class="photo-backdrop" for="photo-op5-points"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+              <figure class="photo-slot"><input id="photo-op5-dogleg" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op5-dogleg" data-gallery-dir="resources/g_adventure/op_day5_dog_leg_fjord/" data-gallery-title="Dog Leg Fjord"><span>Pending</span><figcaption>Dog Leg Fjord</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day5_dog_leg_fjord/" data-gallery-title="Dog Leg Fjord"><label class="photo-backdrop" for="photo-op5-dogleg"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+            </div>
+          </div>
+        </section>
+        <section class="buenos-day-slide operation-day-slide" data-background-color="#002b36">
+          <div class="buenos-layout operation-layout" aria-label="Operation Day 6">
+            <header class="buenos-header"><span>Operation Day 6 · 1 Mar</span><h2>Red Rock Ridge &amp; Stonington Island</h2></header>
+            <ol class="buenos-timeline operation-timeline">
+              <li><span class="route-dot"></span><div><time>Morning</time><strong>Red Rock Ridge</strong><p>Red Rock Ridge 位于 Neny Fjord 附近，红色岩脊和冰雪海岸形成鲜明对比，当天可从高处眺望船只、群山和周边海湾。</p></div></li>
+              <li><span class="route-dot"></span><div><time>Afternoon</time><strong>Stonington Island</strong><p>Stonington Island 保留着美国 East Base 与英国 Base E 遗迹，是南极探险史的重要地点，也与早期女性越冬者的故事相关。</p></div></li>
+            </ol>
+            <div class="buenos-photo-grid operation-photo-grid" aria-label="Operation Day 6 media">
+              <figure class="photo-slot"><input id="photo-op6-redrock" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op6-redrock" data-gallery-dir="resources/g_adventure/op_day6_red_rock_ridge/" data-gallery-title="Red Rock Ridge"><span>Pending</span><figcaption>Red Rock Ridge</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day6_red_rock_ridge/" data-gallery-title="Red Rock Ridge"><label class="photo-backdrop" for="photo-op6-redrock"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+              <figure class="photo-slot"><input id="photo-op6-stonington" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op6-stonington" data-gallery-dir="resources/g_adventure/op_day6_stonington_island/" data-gallery-title="Stonington Island"><span>Pending</span><figcaption>Stonington Island</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day6_stonington_island/" data-gallery-title="Stonington Island"><label class="photo-backdrop" for="photo-op6-stonington"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+            </div>
+          </div>
+        </section>
+        <section class="buenos-day-slide operation-day-slide" data-background-color="#002b36">
+          <div class="buenos-layout operation-layout" aria-label="Operation Day 7">
+            <header class="buenos-header"><span>Operation Day 7 · 2 Mar</span><h2>Detaille Island</h2></header>
+            <ol class="buenos-timeline operation-timeline">
+              <li><span class="route-dot"></span><div><time>Morning</time><strong>Detaille Island</strong><p>Detaille Island 位于 Lallemand Fjord，曾有英国 Station W 科研站。这里保留着基地遗迹、Adelie penguin 活动和环绕冰山景观，是本次最后一次 operation。</p></div></li>
+            </ol>
+            <div class="buenos-photo-grid operation-photo-grid" aria-label="Operation Day 7 media">
+              <figure class="photo-slot"><input id="photo-op7-detaille" type="checkbox" class="photo-toggle"><label class="photo-thumb photo-empty" for="photo-op7-detaille" data-gallery-dir="resources/g_adventure/op_day7_detaille_island/" data-gallery-title="Detaille Island"><span>Pending</span><figcaption>Detaille Island</figcaption></label><div class="photo-lightbox photo-gallery" data-gallery-dir="resources/g_adventure/op_day7_detaille_island/" data-gallery-title="Detaille Island"><label class="photo-backdrop" for="photo-op7-detaille"></label><button class="gallery-nav gallery-prev" type="button" aria-label="上一张"><span>‹</span></button><div class="gallery-frame"></div><button class="gallery-nav gallery-next" type="button" aria-label="下一张"><span>›</span></button></div></figure>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.13.3/mapbox-gl.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/js/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script>
       Reveal.initialize({
         width: 1920,
@@ -133,6 +578,350 @@
         transition: 'slide',
         backgroundTransition: 'fade'
       });
+
+      function mediaLinksFromDirectory(html, directoryUrl) {
+        var doc = new DOMParser().parseFromString(html, 'text/html');
+        var links = Array.prototype.slice.call(doc.querySelectorAll('a[href]'));
+        return links
+          .map(function(link) {
+            return new URL(link.getAttribute('href'), directoryUrl).href;
+          })
+          .filter(function(href) {
+            return /\.(jpe?g|png|webp|gif|mp4|webm|mov|m4v)$/i.test(new URL(href).pathname);
+          })
+          .map(function(href) {
+            var pathname = new URL(href).pathname;
+            return {
+              href: href,
+              type: /\.(mp4|webm|mov|m4v)$/i.test(pathname) ? 'video' : 'image'
+            };
+          })
+          .sort(function(a, b) {
+            return a.href.localeCompare(b.href, undefined, { numeric: true, sensitivity: 'base' });
+          });
+      }
+
+      function galleryMediaMarkup(media, title) {
+        if (media.type === 'video') {
+          return '<video src="' + media.href + '" controls playsinline preload="metadata"></video>';
+        }
+        return '<img src="' + media.href + '" alt="' + title + ' 照片">';
+      }
+
+      function renderGallery(gallery, index) {
+        var media = gallery.galleryMedia || [];
+        var frame = gallery.querySelector('.gallery-frame');
+        if (!frame || !media.length) {
+          return;
+        }
+
+        Array.prototype.slice.call(gallery.querySelectorAll('video')).forEach(function(video) {
+          video.pause();
+        });
+
+        gallery.galleryIndex = (index + media.length) % media.length;
+        frame.innerHTML = '<figure class="gallery-item">' + galleryMediaMarkup(media[gallery.galleryIndex], gallery.dataset.galleryTitle) + '<figcaption>' + gallery.dataset.galleryTitle + ' · ' + (gallery.galleryIndex + 1) + ' / ' + media.length + '</figcaption></figure>';
+      }
+
+      function activeGallery() {
+        var checked = document.querySelector('.photo-toggle:checked');
+        if (!checked) {
+          return null;
+        }
+        return checked.parentElement.querySelector('.photo-gallery');
+      }
+
+      function moveGallery(gallery, step) {
+        if (!gallery || !gallery.galleryMedia || gallery.galleryMedia.length < 2) {
+          return;
+        }
+        renderGallery(gallery, (gallery.galleryIndex || 0) + step);
+      }
+
+      function setupPhotoGalleries() {
+        Array.prototype.slice.call(document.querySelectorAll('.photo-toggle')).forEach(function(toggle) {
+          toggle.addEventListener('change', function() {
+            if (!toggle.checked) {
+              Array.prototype.slice.call(toggle.parentElement.querySelectorAll('video')).forEach(function(video) {
+                video.pause();
+              });
+            }
+            Reveal.configure({ keyboard: !activeGallery() });
+          });
+        });
+
+        Array.prototype.slice.call(document.querySelectorAll('.photo-gallery[data-gallery-dir]')).forEach(function(gallery) {
+          var dir = gallery.dataset.galleryDir;
+          var title = gallery.dataset.galleryTitle;
+          var slot = gallery.closest('.photo-slot');
+          var thumb = slot.querySelector('.photo-thumb[data-gallery-dir]');
+          var prev = gallery.querySelector('.gallery-prev');
+          var next = gallery.querySelector('.gallery-next');
+
+          fetch(dir)
+            .then(function(response) {
+              return response.text().then(function(html) {
+                return mediaLinksFromDirectory(html, response.url);
+              });
+            })
+            .then(function(media) {
+              gallery.galleryMedia = media;
+              gallery.galleryIndex = 0;
+
+              if (!media.length) {
+                if (thumb) {
+                  thumb.querySelector('span').textContent = 'Pending';
+                }
+                gallery.classList.add('gallery-empty');
+                gallery.querySelector('.gallery-frame').innerHTML = '<div class="gallery-empty-message"><strong>' + title + '</strong><small>' + dir + '</small></div>';
+                return;
+              }
+
+              gallery.classList.remove('gallery-empty');
+              if (thumb) {
+                var cover = media.find(function(item) {
+                  return item.type === 'image';
+                }) || media[0];
+                thumb.classList.remove('photo-empty');
+                thumb.classList.toggle('video-thumb', cover.type === 'video');
+                thumb.innerHTML = galleryMediaMarkup(cover, title) + '<span>' + media.length + ' Media</span><figcaption>' + title + '</figcaption>';
+              }
+
+              renderGallery(gallery, 0);
+            });
+
+          if (prev) {
+            prev.addEventListener('click', function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              moveGallery(gallery, -1);
+            });
+          }
+
+          if (next) {
+            next.addEventListener('click', function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              moveGallery(gallery, 1);
+            });
+          }
+        });
+
+        document.addEventListener('keydown', function(event) {
+          var gallery = activeGallery();
+          if (!gallery) {
+            return;
+          }
+
+          if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            moveGallery(gallery, event.key === 'ArrowLeft' ? -1 : 1);
+          }
+
+          if (event.key === ' ' || event.key === 'Spacebar') {
+            var video = gallery.querySelector('.gallery-item video');
+            if (video) {
+              event.preventDefault();
+              event.stopImmediatePropagation();
+              if (video.paused) {
+                video.play();
+              } else {
+                video.pause();
+              }
+            }
+          }
+
+          if (event.key === 'Escape') {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            var checked = document.querySelector('.photo-toggle:checked');
+            if (checked) {
+              checked.checked = false;
+              Reveal.configure({ keyboard: true });
+            }
+          }
+        }, true);
+      }
+
+      setupPhotoGalleries();
+
+      var routePdfDocument;
+      var routePdfRendered = false;
+      var weatherPdfDocument;
+      var weatherPdfRendered = false;
+
+      function redBoxBounds(canvas) {
+        var context = canvas.getContext('2d');
+        var pixels = context.getImageData(0, 0, canvas.width, canvas.height).data;
+        var minX = canvas.width;
+        var minY = canvas.height;
+        var maxX = 0;
+        var maxY = 0;
+        var found = false;
+
+        for (var y = 0; y < canvas.height; y += 1) {
+          for (var x = 0; x < canvas.width; x += 1) {
+            var index = (y * canvas.width + x) * 4;
+            var r = pixels[index];
+            var g = pixels[index + 1];
+            var b = pixels[index + 2];
+
+            if (r > 150 && g < 120 && b < 120 && r > g * 1.45 && r > b * 1.45) {
+              found = true;
+              minX = Math.min(minX, x);
+              minY = Math.min(minY, y);
+              maxX = Math.max(maxX, x);
+              maxY = Math.max(maxY, y);
+            }
+          }
+        }
+
+        if (!found) {
+          return { x: 0, y: 0, width: canvas.width, height: canvas.height };
+        }
+
+        var inset = Math.max(8, Math.round(Math.min(canvas.width, canvas.height) * 0.006));
+        return {
+          x: Math.min(maxX, minX + inset),
+          y: Math.min(maxY, minY + inset),
+          width: Math.max(1, maxX - minX - inset * 2),
+          height: Math.max(1, maxY - minY - inset * 2)
+        };
+      }
+
+      function renderRoutePdfCanvas(pdf, canvas) {
+        var pageNumber = Number(canvas.getAttribute('data-pdf-page'));
+        var frame = canvas.parentElement;
+        return pdf.getPage(pageNumber).then(function(page) {
+          var baseViewport = page.getViewport({ scale: 1 });
+          var availableWidth = Math.max(frame.clientWidth - 2, 1);
+          var availableHeight = Math.max(frame.clientHeight - 2, 1);
+          var cssScale = Math.min(availableWidth / baseViewport.width, availableHeight / baseViewport.height);
+          var renderRatio = Math.min((window.devicePixelRatio || 1) * 2.5, 5);
+          var renderViewport = page.getViewport({ scale: cssScale * renderRatio });
+          var sourceCanvas = document.createElement('canvas');
+          var sourceContext = sourceCanvas.getContext('2d');
+
+          sourceCanvas.width = Math.floor(renderViewport.width);
+          sourceCanvas.height = Math.floor(renderViewport.height);
+
+          return page.render({
+            canvasContext: sourceContext,
+            viewport: renderViewport
+          }).promise.then(function() {
+            var crop = redBoxBounds(sourceCanvas);
+            var cropCssWidth = crop.width / renderRatio;
+            var cropCssHeight = crop.height / renderRatio;
+            var fitScale = Math.min(availableWidth / cropCssWidth, availableHeight / cropCssHeight);
+
+            canvas.width = crop.width;
+            canvas.height = crop.height;
+            canvas.style.width = Math.floor(cropCssWidth * fitScale) + 'px';
+            canvas.style.height = Math.floor(cropCssHeight * fitScale) + 'px';
+            canvas.getContext('2d').drawImage(
+              sourceCanvas,
+              crop.x,
+              crop.y,
+              crop.width,
+              crop.height,
+              0,
+              0,
+              crop.width,
+              crop.height
+            );
+          });
+        });
+      }
+
+      function setupRoutePdf() {
+        var slide = document.querySelector('.route-pdf-slide');
+        if (!slide || routePdfRendered || !window.pdfjsLib) {
+          return;
+        }
+
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        var loadingTask = routePdfDocument
+          ? Promise.resolve(routePdfDocument)
+          : pdfjsLib.getDocument('resources/g_adventure/21FEB2026_Route_of_Our_Travels.pdf').promise;
+
+        loadingTask.then(function(pdf) {
+          routePdfDocument = pdf;
+          return Promise.all(Array.prototype.slice.call(slide.querySelectorAll('.route-pdf-canvas')).map(function(canvas) {
+            return renderRoutePdfCanvas(pdf, canvas);
+          }));
+        }).then(function() {
+          routePdfRendered = true;
+        });
+      }
+
+      function playRoutePdf(event) {
+        var slide = event.currentSlide || Reveal.getCurrentSlide();
+        if (slide && slide.classList.contains('route-pdf-slide')) {
+          setupRoutePdf();
+        }
+      }
+
+      Reveal.addEventListener('ready', playRoutePdf);
+      Reveal.addEventListener('slidechanged', playRoutePdf);
+
+      function renderFullPdfCanvas(pdf, canvas) {
+        var pageNumber = Number(canvas.getAttribute('data-pdf-page'));
+        var frame = canvas.parentElement;
+        return pdf.getPage(pageNumber).then(function(page) {
+          var baseViewport = page.getViewport({ scale: 1 });
+          var availableWidth = Math.max(frame.clientWidth - 2, 1);
+          var availableHeight = Math.max(frame.clientHeight - 2, 1);
+          if (canvas.classList.contains('weather-pdf-canvas')) {
+            availableWidth = Math.max((frame.clientWidth - 86 - 14 * 4) / 4, 1);
+            availableHeight = Math.max(frame.clientHeight - 2, 1);
+          }
+          var cssScale = Math.min(availableWidth / baseViewport.width, availableHeight / baseViewport.height);
+          var renderRatio = Math.min((window.devicePixelRatio || 1) * 2, 4);
+          var viewport = page.getViewport({ scale: cssScale * renderRatio });
+
+          canvas.width = Math.floor(viewport.width);
+          canvas.height = Math.floor(viewport.height);
+          canvas.style.width = Math.floor(viewport.width / renderRatio) + 'px';
+          canvas.style.height = Math.floor(viewport.height / renderRatio) + 'px';
+
+          return page.render({
+            canvasContext: canvas.getContext('2d'),
+            viewport: viewport
+          }).promise;
+        });
+      }
+
+      function setupWeatherPdf() {
+        var slide = document.querySelector('.weather-slide');
+        if (!slide || weatherPdfRendered || !window.pdfjsLib) {
+          return;
+        }
+
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        var loadingTask = weatherPdfDocument
+          ? Promise.resolve(weatherPdfDocument)
+          : pdfjsLib.getDocument('resources/g_adventure/21FEB2026_Weather_Charts.pdf').promise;
+
+        loadingTask.then(function(pdf) {
+          weatherPdfDocument = pdf;
+          return Promise.all(Array.prototype.slice.call(slide.querySelectorAll('.weather-pdf-canvas')).map(function(canvas) {
+            return renderFullPdfCanvas(pdf, canvas);
+          }));
+        }).then(function() {
+          weatherPdfRendered = true;
+        });
+      }
+
+      function playWeatherPdf(event) {
+        var slide = event.currentSlide || Reveal.getCurrentSlide();
+        if (slide && slide.classList.contains('weather-slide')) {
+          setupWeatherPdf();
+        }
+      }
+
+      Reveal.addEventListener('ready', playWeatherPdf);
+      Reveal.addEventListener('slidechanged', playWeatherPdf);
 
       var itineraryMap;
       var itineraryReady = false;
