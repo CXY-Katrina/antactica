@@ -1,27 +1,125 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>南极 | Antarctica</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/reveal.css">
-    <link rel="stylesheet" href="css/theme.css?v=20260506-2">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.13.3/mapbox-gl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/theme.css?v=20260506-13">
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section class="antarctica-title-slide" data-background-color="#0F4C81">
+        <section class="antarctica-title-slide" data-background-color="#002b36">
           <div class="title-grid" aria-label="南极封面">
             <div class="text-box cn-title" lang="zh-CN">
-              <span>南</span>
-              <span>极</span>
+              南极
             </div>
             <div class="text-box en-title" lang="en">Antarctica</div>
+          </div>
+        </section>
+        <section class="itinerary-slide" data-background-color="#002b36">
+          <div class="itinerary-layout" aria-label="南极行程">
+            <div class="map-panel">
+              <div class="map-stage">
+                <div id="mapbox-map" class="mapbox-map" aria-label="南极行程世界地图"></div>
+              </div>
+            </div>
+            <aside class="timeline-panel" aria-label="行程时间线">
+              <ol class="trip-list">
+                <li class="trip-head" style="--delay: 0.05s;">
+                  <span>地点</span>
+                  <span>当地时间</span>
+                  <span>北京时间</span>
+                </li>
+                <li style="--delay: 0.15s;">
+                  <span class="place">上海</span>
+                  <time>02-18 11:25 <small>UTC+8</small></time>
+                  <time>02-18 11:25</time>
+                </li>
+                <li class="flight-gap" style="--delay: 0.22s;">
+                  <span>飞行 14h20m</span>
+                </li>
+                <li style="--delay: 0.3s;">
+                  <span class="place">阿姆斯特丹</span>
+                  <time>02-18 18:45 <small>UTC+1</small></time>
+                  <time>02-19 01:45</time>
+                </li>
+                <li style="--delay: 0.45s;">
+                  <span class="place">阿姆斯特丹</span>
+                  <time>02-18 21:20 <small>UTC+1</small></time>
+                  <time>02-19 04:20</time>
+                </li>
+                <li class="flight-gap" style="--delay: 0.52s;">
+                  <span>飞行 13h55m</span>
+                </li>
+                <li style="--delay: 0.6s;">
+                  <span class="place">布宜诺斯艾利斯</span>
+                  <time>02-19 07:15 <small>UTC-3</small></time>
+                  <time>02-19 18:15</time>
+                </li>
+                <li style="--delay: 0.75s;">
+                  <span class="place">布宜诺斯艾利斯</span>
+                  <time>02-20 03:50 <small>UTC-3</small></time>
+                  <time>02-20 14:50</time>
+                </li>
+                <li class="flight-gap" style="--delay: 0.82s;">
+                  <span>飞行 3h40m</span>
+                </li>
+                <li style="--delay: 0.9s;">
+                  <span class="place">乌斯怀亚</span>
+                  <time>02-20 07:30 <small>UTC-3</small></time>
+                  <time>02-20 18:30</time>
+                </li>
+                <li style="--delay: 1.05s;">
+                  <span class="place">乌斯怀亚</span>
+                  <time>03-05 10:45 <small>UTC-3</small></time>
+                  <time>03-05 21:45</time>
+                </li>
+                <li class="flight-gap" style="--delay: 1.12s;">
+                  <span>飞行 5h10m</span>
+                </li>
+                <li style="--delay: 1.2s;">
+                  <span class="place">布宜诺斯艾利斯</span>
+                  <time>03-05 15:55 <small>UTC-3</small></time>
+                  <time>03-06 02:55</time>
+                </li>
+                <li style="--delay: 1.35s;">
+                  <span class="place">布宜诺斯艾利斯</span>
+                  <time>03-05 22:40 <small>UTC-3</small></time>
+                  <time>03-06 09:40</time>
+                </li>
+                <li class="flight-gap" style="--delay: 1.42s;">
+                  <span>飞行 12h55m</span>
+                </li>
+                <li style="--delay: 1.5s;">
+                  <span class="place">巴黎</span>
+                  <time>03-06 15:35 <small>UTC+1</small></time>
+                  <time>03-06 22:35</time>
+                </li>
+                <li style="--delay: 1.65s;">
+                  <span class="place">巴黎</span>
+                  <time>03-06 23:30 <small>UTC+1</small></time>
+                  <time>03-07 06:30</time>
+                </li>
+                <li class="flight-gap" style="--delay: 1.72s;">
+                  <span>飞行 12h45m</span>
+                </li>
+                <li style="--delay: 1.8s;">
+                  <span class="place">上海</span>
+                  <time>03-07 19:15 <small>UTC+8</small></time>
+                  <time>03-07 19:15</time>
+                </li>
+              </ol>
+            </aside>
           </div>
         </section>
       </div>
     </div>
 
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.13.3/mapbox-gl.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/js/reveal.js"></script>
     <script>
       Reveal.initialize({
@@ -32,9 +130,294 @@
         controls: true,
         progress: false,
         center: false,
-        transition: 'fade',
+        transition: 'slide',
         backgroundTransition: 'fade'
       });
+
+      var itineraryMap;
+      var itineraryReady = false;
+      var itineraryAnimationFrame;
+      var itineraryStarted = false;
+
+      var tripStops = [
+        { id: 'shanghai', name: '上海', time: '02-18 11:25 / 03-07 19:15', coord: [121.4737, 31.2304] },
+        { id: 'amsterdam', name: '阿姆斯特丹', time: '02-18 18:45 / 21:20', coord: [4.9041, 52.3676] },
+        { id: 'buenos', name: '布宜诺斯艾利斯', time: '02-19 07:15 / 02-20 03:50', returnTime: '03-05 15:55 / 22:40', coord: [-58.3821, -34.6037] },
+        { id: 'ushuaia', name: '乌斯怀亚', time: '02-20 07:30 / 03-05 10:45', coord: [-68.3058, -54.8076] },
+        { id: 'paris', name: '巴黎', time: '03-06 15:35 / 23:30', coord: [2.3514, 48.8575] },
+        { id: 'shanghai-return', name: '上海', time: '03-07 19:15', coord: [121.4737, 31.2304] }
+      ];
+
+      var tripLegs = [
+        { id: 'route-1', from: 0, to: 1, start: 0, end: 2100, bearing: 190, bend: -14, color: '#268bd2' },
+        { id: 'route-2', from: 1, to: 2, start: 3000, end: 5600, bearing: 468, bend: -18, color: '#268bd2' },
+        { id: 'route-3', from: 2, to: 3, start: 6200, end: 7200, bearing: 465, bend: 1.4, color: '#268bd2' },
+        { id: 'route-4', from: 3, to: 2, start: 8000, end: 9000, bearing: 285, bend: -8, color: '#78b9e6' },
+        { id: 'route-5', from: 2, to: 4, start: 9800, end: 11600, bearing: 648, bend: 24, color: '#78b9e6' },
+        { id: 'route-6', from: 4, to: 5, start: 12200, end: 14000, bearing: 736, bend: 12, color: '#78b9e6' }
+      ];
+
+      function interpolate(a, b, t) {
+        return a + (b - a) * t;
+      }
+
+      function makeArc(from, to, bend) {
+        var points = [];
+        var dx = to[0] - from[0];
+        var dy = to[1] - from[1];
+        var length = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
+        var nx = -dy / length;
+        var ny = dx / length;
+
+        for (var i = 0; i <= 80; i++) {
+          var t = i / 80;
+          var lift = Math.sin(Math.PI * t) * bend;
+          points.push([
+            interpolate(from[0], to[0], t) + nx * lift,
+            interpolate(from[1], to[1], t) + ny * lift
+          ]);
+        }
+
+        return points;
+      }
+
+      function coordsUntil(points, progress) {
+        var count = Math.max(2, Math.floor((points.length - 1) * progress) + 1);
+        return points.slice(0, count);
+      }
+
+      function pointAt(points, progress) {
+        var index = Math.min(points.length - 1, Math.max(0, progress * (points.length - 1)));
+        var lower = Math.floor(index);
+        var upper = Math.min(points.length - 1, lower + 1);
+        var local = index - lower;
+        return [
+          interpolate(points[lower][0], points[upper][0], local),
+          interpolate(points[lower][1], points[upper][1], local)
+        ];
+      }
+
+      function eased(progress) {
+        return progress < 0.5
+          ? 2 * progress * progress
+          : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+      }
+
+      function setupItineraryMap() {
+        if (itineraryMap || !window.mapboxgl) {
+          return;
+        }
+
+        mapboxgl.accessToken = '';
+
+        itineraryMap = new mapboxgl.Map({
+          container: 'mapbox-map',
+          interactive: false,
+          attributionControl: false,
+          logoPosition: 'bottom-left',
+          style: {
+            version: 8,
+            sources: {
+              world: {
+                type: 'geojson',
+                data: 'world.geo.json'
+              }
+            },
+            layers: [
+              {
+                id: 'map-background',
+                type: 'background',
+                paint: { 'background-color': '#002b36' }
+              },
+              {
+                id: 'world-fill',
+                type: 'fill',
+                source: 'world',
+                paint: { 'fill-color': 'rgba(238, 232, 213, 0.03)' }
+              },
+              {
+                id: 'world-outline',
+                type: 'line',
+                source: 'world',
+                paint: {
+                  'line-color': 'rgba(147, 161, 161, 0.62)',
+                  'line-width': 1.25
+                }
+              }
+            ]
+          },
+          center: [12, 8],
+          zoom: 0.95
+        });
+
+        itineraryMap.on('load', function() {
+          itineraryMap.fitBounds([[-180, -62], [180, 76]], {
+            padding: { top: 6, right: 4, bottom: 6, left: 4 },
+            duration: 0
+          });
+
+          tripLegs.forEach(function(leg) {
+            leg.points = makeArc(tripStops[leg.from].coord, tripStops[leg.to].coord, leg.bend);
+            itineraryMap.addSource(leg.id, {
+              type: 'geojson',
+              data: {
+                type: 'Feature',
+                geometry: { type: 'LineString', coordinates: [] }
+              }
+            });
+            itineraryMap.addLayer({
+              id: leg.id,
+              type: 'line',
+              source: leg.id,
+              paint: {
+                'line-color': leg.color,
+                'line-width': 3,
+                'line-dasharray': [1.6, 1.9],
+                'line-opacity': 0.95
+              }
+            });
+          });
+
+          tripStops.slice(0, 5).forEach(function(stop) {
+            var markerEl = document.createElement('div');
+            markerEl.className = 'map-stop map-stop-' + stop.id;
+            markerEl.innerHTML = '<span class="map-stop-dot"></span><span class="map-stop-label"><strong>' + stop.name + '</strong><small>' + stop.time + '</small>' + (stop.returnTime ? '<small class="return-time">' + stop.returnTime + '</small>' : '') + '</span>';
+            stop.marker = new mapboxgl.Marker({ element: markerEl, anchor: 'center' })
+              .setLngLat(stop.coord)
+              .addTo(itineraryMap);
+          });
+
+          var planeEl = document.createElement('div');
+          planeEl.className = 'plane-marker';
+          planeEl.innerHTML = '<i class="plane-icon fa-whiteboard fa-semibold fa-plane fa-solid" aria-hidden="true"></i>';
+          tripStops[0].plane = new mapboxgl.Marker({ element: planeEl, anchor: 'center' })
+            .setLngLat(tripStops[0].coord)
+            .addTo(itineraryMap);
+
+          itineraryReady = true;
+          if (document.querySelector('.itinerary-slide.present')) {
+            startItineraryAnimation();
+          }
+        });
+      }
+
+      function resetItineraryAnimation() {
+        if (!itineraryReady) {
+          return;
+        }
+
+        tripLegs.forEach(function(leg) {
+          itineraryMap.getSource(leg.id).setData({
+            type: 'Feature',
+            geometry: { type: 'LineString', coordinates: [] }
+          });
+        });
+
+        tripStops.slice(0, 5).forEach(function(stop) {
+          stop.marker.getElement().classList.remove('visible');
+          stop.marker.getElement().classList.remove('return-visible');
+        });
+
+        tripStops[0].plane.getElement().querySelector('.plane-icon').style.transform = 'rotate(190deg)';
+        tripStops[0].plane.getElement().classList.remove('hidden');
+        tripStops[0].plane.setLngLat(tripStops[0].coord);
+      }
+
+      function bearingAt(elapsed) {
+        if (elapsed < 2100) return 190;
+        if (elapsed < 3000) return interpolate(190, 468, eased((elapsed - 2100) / 900));
+        if (elapsed < 5600) return 468;
+        if (elapsed < 6200) return interpolate(468, 465, eased((elapsed - 5600) / 600));
+        if (elapsed < 7200) return 465;
+        if (elapsed < 8000) return interpolate(465, 285, eased((elapsed - 7200) / 800));
+        if (elapsed < 9000) return 285;
+        if (elapsed < 9800) return interpolate(285, 648, eased((elapsed - 9000) / 800));
+        if (elapsed < 11600) return 648;
+        if (elapsed < 12200) return interpolate(648, 736, eased((elapsed - 11600) / 600));
+        return 736;
+      }
+
+      function startItineraryAnimation() {
+        if (!itineraryReady || itineraryStarted) {
+          return;
+        }
+
+        itineraryStarted = true;
+        resetItineraryAnimation();
+
+        var startTime;
+        function frame(timestamp) {
+          if (!startTime) {
+            startTime = timestamp;
+          }
+
+          var elapsed = timestamp - startTime;
+
+          tripStops.slice(0, 5).forEach(function(stop, index) {
+            var revealAt = [0, 1550, 4450, 6650, 11100][index];
+            if (elapsed >= revealAt) {
+              stop.marker.getElement().classList.add('visible');
+            }
+          });
+
+          if (elapsed >= 9000) {
+            tripStops[2].marker.getElement().classList.add('return-visible');
+          }
+
+          tripLegs.forEach(function(leg) {
+            var progress = Math.max(0, Math.min(1, (elapsed - leg.start) / (leg.end - leg.start)));
+            if (progress > 0) {
+              itineraryMap.getSource(leg.id).setData({
+                type: 'Feature',
+                geometry: { type: 'LineString', coordinates: coordsUntil(leg.points, progress) }
+              });
+            }
+          });
+
+          var activeLeg = tripLegs.find(function(leg) {
+            return elapsed >= leg.start && elapsed <= leg.end;
+          });
+          if (activeLeg) {
+            var legProgress = (elapsed - activeLeg.start) / (activeLeg.end - activeLeg.start);
+            tripStops[0].plane.setLngLat(pointAt(activeLeg.points, eased(legProgress)));
+          }
+
+          tripStops[0].plane.getElement().querySelector('.plane-icon').style.transform = 'rotate(' + bearingAt(elapsed) + 'deg)';
+
+          if (elapsed < 14000) {
+            itineraryAnimationFrame = requestAnimationFrame(frame);
+          } else {
+            tripStops[0].plane.setLngLat(tripStops[5].coord);
+            tripStops[0].plane.getElement().querySelector('.plane-icon').style.transform = 'rotate(736deg)';
+            tripStops[0].plane.getElement().classList.add('hidden');
+          }
+        }
+
+        if (itineraryAnimationFrame) {
+          cancelAnimationFrame(itineraryAnimationFrame);
+        }
+        itineraryAnimationFrame = requestAnimationFrame(frame);
+      }
+
+      function playItineraryAnimation(event) {
+        var slide = event.currentSlide || Reveal.getCurrentSlide();
+        if (!slide || !slide.classList.contains('itinerary-slide')) {
+          return;
+        }
+
+        setupItineraryMap();
+        startItineraryAnimation();
+      }
+
+      Reveal.addEventListener('ready', playItineraryAnimation);
+      Reveal.addEventListener('slidechanged', playItineraryAnimation);
     </script>
   </body>
 </html>
+
+
+
+
+
+
+
