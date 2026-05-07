@@ -535,6 +535,10 @@ body {
   transform: rotate(90deg);
 }
 
+.team-card img.rotate-ccw {
+  transform: rotate(-90deg);
+}
+
 .team-card div {
   min-width: 0;
   text-align: center;
@@ -632,31 +636,57 @@ body {
 
 .weather-layout {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto 1fr 1fr;
-  gap: 18px;
+  gap: 12px;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: 3.2% 3.4% 3.4%;
+  padding: 2.4% 2.7% 2.7%;
+}
+
+.weather-layout .route-pdf-header {
+  grid-column: auto;
 }
 
 .weather-row {
   display: grid;
-  grid-template-columns: 86px repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 8px;
   min-width: 0;
   min-height: 0;
-  align-items: center;
+  align-items: stretch;
 }
 
 .weather-row > span {
+  justify-self: start;
+  align-self: start;
   color: var(--moon-selection);
   font-family: Consolas, "Courier New", monospace;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 800;
   line-height: 1;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+}
+
+.weather-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  min-width: 0;
+  min-height: 0;
+  align-items: stretch;
+}
+
+.weather-chart-grid-wave {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.weather-chart-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
 }
 
 .weather-pdf-canvas {
