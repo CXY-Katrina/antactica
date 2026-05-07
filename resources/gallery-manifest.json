@@ -79,6 +79,24 @@
     "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_101520.jpg",
     "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_103850.jpg"
   ],
+  "resources/g_adventure/op_day3_lemaire_channel/": [
+    "resources/g_adventure/op_day3_lemaire_channel/IMG_20260226_181556.jpg"
+  ],
+  "resources/g_adventure/op_day3_neumayer_channel/": [
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_104252.jpg",
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_105607.jpg",
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_111303.jpg",
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_111520.jpg",
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_112115.jpg",
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_112554.jpg"
+  ],
+  "resources/g_adventure/op_day3_port_lockroy_jougla_point/": [
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_150127.jpg",
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_151433.jpg",
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_152648.jpg",
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_152731.jpg",
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_153017.jpg"
+  ],
   "resources/g_adventure/team_members/": [
     "resources/g_adventure/team_members/01_685x609.jpg",
     "resources/g_adventure/team_members/02_522x523.jpg",

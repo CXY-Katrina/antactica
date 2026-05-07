@@ -746,16 +746,22 @@ body {
   line-height: 1.36;
 }
 
-.operation-day-two .operation-timeline {
+.operation-day-two .operation-timeline,
+.operation-day-three .operation-timeline,
+.operation-day-four .operation-timeline {
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-.operation-day-two .operation-timeline li {
+.operation-day-two .operation-timeline li,
+.operation-day-three .operation-timeline li,
+.operation-day-four .operation-timeline li {
   margin-bottom: 18px;
 }
 
-.operation-day-two .operation-timeline p {
+.operation-day-two .operation-timeline p,
+.operation-day-three .operation-timeline p,
+.operation-day-four .operation-timeline p {
   font-size: 17px;
   line-height: 1.32;
 }
