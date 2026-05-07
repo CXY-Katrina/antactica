@@ -1,129 +1,200 @@
 {
   "resources/day1/el_ateneo/": [
-    "resources/day1/el_ateneo/IMG_20260219_112843.jpg"
+    "resources/day1/el_ateneo/IMG_20260219_112843.webp"
   ],
   "resources/day1/la_boca/": [
-    "resources/day1/la_boca/IMG_20260219_160210.jpg",
-    "resources/day1/la_boca/IMG_20260219_162402.jpg"
+    "resources/day1/la_boca/IMG_20260219_160210.webp",
+    "resources/day1/la_boca/IMG_20260219_162402.webp"
   ],
   "resources/day1/la_bombonera/": [
-    "resources/day1/la_bombonera/IMG_20260219_152244.jpg"
+    "resources/day1/la_bombonera/IMG_20260219_152244.webp"
   ],
   "resources/day1/mate_tango/": [
-    "resources/day1/mate_tango/IMG_20260219_231427.jpg"
+    "resources/day1/mate_tango/IMG_20260219_231427.webp"
   ],
   "resources/day1/plaza_de_mayo/": [
-    "resources/day1/plaza_de_mayo/DSC00684.JPG"
+    "resources/day1/plaza_de_mayo/DSC00684.webp"
   ],
   "resources/day1/puente_de_la_mujer/": [
-    "resources/day1/puente_de_la_mujer/IMG_20260219_173529.jpg"
+    "resources/day1/puente_de_la_mujer/IMG_20260219_173529.webp"
   ],
   "resources/day1/santos_manjares/": [
-    "resources/day1/santos_manjares/IMG_20260219_121935.jpg",
-    "resources/day1/santos_manjares/IMG_20260219_123500.jpg"
+    "resources/day1/santos_manjares/IMG_20260219_121935.webp",
+    "resources/day1/santos_manjares/IMG_20260219_123500.webp"
   ],
   "resources/day1/teatro_colon/": [
-    "resources/day1/teatro_colon/DSC00662.JPG",
-    "resources/day1/teatro_colon/IMG_20260219_102014.jpg",
-    "resources/day1/teatro_colon/IMG_20260219_103519.jpg",
-    "resources/day1/teatro_colon/IMG_20260219_104751.jpg"
+    "resources/day1/teatro_colon/DSC00662.webp",
+    "resources/day1/teatro_colon/IMG_20260219_102014.webp",
+    "resources/day1/teatro_colon/IMG_20260219_103519.webp",
+    "resources/day1/teatro_colon/IMG_20260219_104751.webp"
   ],
   "resources/day2/city_tour/": [
-    "resources/day2/city_tour/IMG_20260220_113213.jpg",
-    "resources/day2/city_tour/IMG_20260220_115848.jpg",
-    "resources/day2/city_tour/IMG_20260220_120455.jpg",
-    "resources/day2/city_tour/IMG_20260220_174021.jpg",
-    "resources/day2/city_tour/IMG_20260220_201812.jpg"
+    "resources/day2/city_tour/IMG_20260220_113213.webp",
+    "resources/day2/city_tour/IMG_20260220_115848.webp",
+    "resources/day2/city_tour/IMG_20260220_120455.webp",
+    "resources/day2/city_tour/IMG_20260220_174021.webp",
+    "resources/day2/city_tour/IMG_20260220_201812.webp"
   ],
   "resources/day2/tierra_del_fuego/": [
-    "resources/day2/tierra_del_fuego/IMG_20260221_110805.jpg",
-    "resources/day2/tierra_del_fuego/IMG_20260221_111824.jpg",
-    "resources/day2/tierra_del_fuego/IMG_20260221_122748.jpg",
-    "resources/day2/tierra_del_fuego/IMG_20260221_122905.jpg"
+    "resources/day2/tierra_del_fuego/DSC01006.webp",
+    "resources/day2/tierra_del_fuego/IMG_20260221_110805.webp",
+    "resources/day2/tierra_del_fuego/IMG_20260221_111824.webp",
+    "resources/day2/tierra_del_fuego/IMG_20260221_122748.webp",
+    "resources/day2/tierra_del_fuego/IMG_20260221_122905.webp"
   ],
   "resources/g_adventure/": [
-    "resources/g_adventure/IMG_20260223_180243.jpg"
+    "resources/g_adventure/IMG_20260223_180243.webp"
   ],
   "resources/g_adventure/op_day1_half_moon_island/": [
-    "resources/g_adventure/op_day1_half_moon_island/IMG_20260224_073740.jpg",
-    "resources/g_adventure/op_day1_half_moon_island/IMG_20260224_083724.jpg",
-    "resources/g_adventure/op_day1_half_moon_island/IMG_20260224_092723.jpg",
-    "resources/g_adventure/op_day1_half_moon_island/IMG_20260224_100030.jpg"
+    "resources/g_adventure/op_day1_half_moon_island/DSC01130.webp",
+    "resources/g_adventure/op_day1_half_moon_island/DSC01140.webp",
+    "resources/g_adventure/op_day1_half_moon_island/IMG_20260224_073740.webp",
+    "resources/g_adventure/op_day1_half_moon_island/IMG_20260224_083724.webp",
+    "resources/g_adventure/op_day1_half_moon_island/IMG_20260224_092723.webp",
+    "resources/g_adventure/op_day1_half_moon_island/IMG_20260224_100030.webp"
   ],
   "resources/g_adventure/op_day1_whalers_bay/": [
-    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_150039.jpg",
-    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_150657.jpg",
-    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_161454.jpg",
-    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_164658.jpg",
-    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_170455.jpg",
-    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_170625.jpg",
-    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_172937.jpg"
+    "resources/g_adventure/op_day1_whalers_bay/DSC01400.webp",
+    "resources/g_adventure/op_day1_whalers_bay/DSC01423.webp",
+    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_150039.webp",
+    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_150657.webp",
+    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_161454.webp",
+    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_164658.webp",
+    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_170455.webp",
+    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_170625.webp",
+    "resources/g_adventure/op_day1_whalers_bay/IMG_20260224_172937.webp"
   ],
   "resources/g_adventure/op_day2_cuverville_island/": [
-    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_143219_1.jpg",
-    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_150620.jpg",
-    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_152128.jpg",
-    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_161614.jpg",
-    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_182229.jpg",
-    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_182321.jpg"
+    "resources/g_adventure/op_day2_cuverville_island/DSC02032.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02163.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02217.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02265.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02289.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02468.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02474.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02495.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02569.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02618.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02647.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC02847.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC03122.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC03142.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC03184.webp",
+    "resources/g_adventure/op_day2_cuverville_island/DSC03190.webp",
+    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_143219_1.webp",
+    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_150620.webp",
+    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_152128.webp",
+    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_161614.webp",
+    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_182229.webp",
+    "resources/g_adventure/op_day2_cuverville_island/IMG_20260225_182321.webp"
   ],
   "resources/g_adventure/op_day2_leith_cove/": [
-    "resources/g_adventure/op_day2_leith_cove/IMG_20260225_183552.jpg",
-    "resources/g_adventure/op_day2_leith_cove/IMG_20260225_195606.jpg",
-    "resources/g_adventure/op_day2_leith_cove/IMG_20260225_201524.jpg"
+    "resources/g_adventure/op_day2_leith_cove/DSC03204.webp",
+    "resources/g_adventure/op_day2_leith_cove/DSC03237.webp",
+    "resources/g_adventure/op_day2_leith_cove/DSC03260.webp",
+    "resources/g_adventure/op_day2_leith_cove/DSC03309.webp",
+    "resources/g_adventure/op_day2_leith_cove/IMG_20260225_183552.webp",
+    "resources/g_adventure/op_day2_leith_cove/IMG_20260225_195606.webp",
+    "resources/g_adventure/op_day2_leith_cove/IMG_20260225_201524.webp"
   ],
   "resources/g_adventure/op_day2_orne_harbour/": [
-    "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_091113.jpg",
-    "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_091519.jpg",
-    "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_091812.jpg",
-    "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_101520.jpg",
-    "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_103850.jpg"
+    "resources/g_adventure/op_day2_orne_harbour/DSC01775.webp",
+    "resources/g_adventure/op_day2_orne_harbour/DSC01857.webp",
+    "resources/g_adventure/op_day2_orne_harbour/DSC03176.webp",
+    "resources/g_adventure/op_day2_orne_harbour/DSC03555.webp",
+    "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_091113.webp",
+    "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_091519.webp",
+    "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_091812.webp",
+    "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_101520.webp",
+    "resources/g_adventure/op_day2_orne_harbour/IMG_20260225_103850.webp"
   ],
   "resources/g_adventure/op_day3_lemaire_channel/": [
-    "resources/g_adventure/op_day3_lemaire_channel/IMG_20260226_181556.jpg"
+    "resources/g_adventure/op_day3_lemaire_channel/DSC03497.webp"
   ],
   "resources/g_adventure/op_day3_neumayer_channel/": [
-    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_104252.jpg",
-    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_105607.jpg",
-    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_111303.jpg",
-    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_111520.jpg",
-    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_112115.jpg",
-    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_112554.jpg"
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_104252.webp",
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_105607.webp",
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_111303.webp",
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_111520.webp",
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_112115.webp",
+    "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_112554.webp"
   ],
   "resources/g_adventure/op_day3_port_lockroy_jougla_point/": [
-    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_150127.jpg",
-    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_151433.jpg",
-    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_152648.jpg",
-    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_152731.jpg",
-    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_153017.jpg"
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_151433.webp",
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_152648.webp",
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_152731.webp",
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_153013.webp",
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_153017.webp"
+  ],
+  "resources/g_adventure/op_day4_antarctic_circle/": [
+    "resources/g_adventure/op_day4_antarctic_circle/photographer_slideshow_b_page_40.webp"
+  ],
+  "resources/g_adventure/op_day4_polar_plunge/": [
+    "resources/g_adventure/op_day4_polar_plunge/photographer_slideshow_b_page_51.webp",
+    "resources/g_adventure/op_day4_polar_plunge/photographer_slideshow_b_page_52.webp"
   ],
   "resources/g_adventure/op_day4_the_gullet/": [
-    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_095501.jpg",
-    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_144519.jpg",
-    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_144639.jpg",
-    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_145927.jpg",
-    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_170815.jpg",
-    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_171009.jpg",
-    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_171312.jpg",
-    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_183247.jpg",
-    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_184209.jpg"
+    "resources/g_adventure/op_day4_the_gullet/DSC02082.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC02084.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC02128.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC02160.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC03687.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC03832.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC03877.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC03883.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC03888.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC03891.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC04136.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC04158.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC04503.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC04617.webp",
+    "resources/g_adventure/op_day4_the_gullet/DSC04625.webp",
+    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_095106.webp",
+    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_095501.webp",
+    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_144519.webp",
+    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_144639.webp",
+    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_145927.webp",
+    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_151858.webp",
+    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_170815.webp",
+    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_171009.webp",
+    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_171312.webp",
+    "resources/g_adventure/op_day4_the_gullet/IMG_20260227_183247.webp"
+  ],
+  "resources/g_adventure/op_day5_bongrain_lainez_points/": [
+    "resources/g_adventure/op_day5_bongrain_lainez_points/C0046T01.webp",
+    "resources/g_adventure/op_day5_bongrain_lainez_points/DSC02174.webp",
+    "resources/g_adventure/op_day5_bongrain_lainez_points/DSC04775.webp",
+    "resources/g_adventure/op_day5_bongrain_lainez_points/DSC04799.webp",
+    "resources/g_adventure/op_day5_bongrain_lainez_points/DSC04825.webp",
+    "resources/g_adventure/op_day5_bongrain_lainez_points/DSC04830.webp",
+    "resources/g_adventure/op_day5_bongrain_lainez_points/DSC04852.webp",
+    "resources/g_adventure/op_day5_bongrain_lainez_points/DSC04904.webp",
+    "resources/g_adventure/op_day5_bongrain_lainez_points/IMG_20260228_092744.webp",
+    "resources/g_adventure/op_day5_bongrain_lainez_points/IMG_20260228_100355.webp",
+    "resources/g_adventure/op_day5_bongrain_lainez_points/IMG_20260228_104336.webp"
+  ],
+  "resources/g_adventure/op_day5_dog_leg_fjord/": [
+    "resources/g_adventure/op_day5_dog_leg_fjord/DSC05047.webp",
+    "resources/g_adventure/op_day5_dog_leg_fjord/DSC05140.webp",
+    "resources/g_adventure/op_day5_dog_leg_fjord/IMG_20260228_161640.webp",
+    "resources/g_adventure/op_day5_dog_leg_fjord/IMG_20260228_193702.webp"
   ],
   "resources/g_adventure/team_members/": [
-    "resources/g_adventure/team_members/01_685x609.jpg",
-    "resources/g_adventure/team_members/02_522x523.jpg",
-    "resources/g_adventure/team_members/03_594x891.jpg",
-    "resources/g_adventure/team_members/04_685x804.jpg",
-    "resources/g_adventure/team_members/05_559x544.jpg",
-    "resources/g_adventure/team_members/06_456x630.jpg",
-    "resources/g_adventure/team_members/07_670x822.jpg",
-    "resources/g_adventure/team_members/08_629x850.jpg",
-    "resources/g_adventure/team_members/09_1190x669.jpg",
-    "resources/g_adventure/team_members/10_354x484.jpg",
-    "resources/g_adventure/team_members/11_712x835.jpg",
-    "resources/g_adventure/team_members/12_667x921.jpg",
-    "resources/g_adventure/team_members/13_609x782.jpg",
-    "resources/g_adventure/team_members/14_367x434.jpg",
-    "resources/g_adventure/team_members/15_807x832.jpg",
-    "resources/g_adventure/team_members/16_620x830.jpg"
+    "resources/g_adventure/team_members/01_685x609.webp",
+    "resources/g_adventure/team_members/02_522x523.webp",
+    "resources/g_adventure/team_members/03_594x891.webp",
+    "resources/g_adventure/team_members/04_685x804.webp",
+    "resources/g_adventure/team_members/05_559x544.webp",
+    "resources/g_adventure/team_members/06_456x630.webp",
+    "resources/g_adventure/team_members/07_670x822.webp",
+    "resources/g_adventure/team_members/08_629x850.webp",
+    "resources/g_adventure/team_members/09_1190x669.webp",
+    "resources/g_adventure/team_members/10_354x484.webp",
+    "resources/g_adventure/team_members/11_712x835.webp",
+    "resources/g_adventure/team_members/12_667x921.webp",
+    "resources/g_adventure/team_members/13_609x782.webp",
+    "resources/g_adventure/team_members/14_367x434.webp",
+    "resources/g_adventure/team_members/15_807x832.webp",
+    "resources/g_adventure/team_members/16_620x830.webp"
   ]
 }
