@@ -120,6 +120,8 @@
     "resources/g_adventure/op_day3_neumayer_channel/IMG_20260226_112554.webp"
   ],
   "resources/g_adventure/op_day3_port_lockroy_jougla_point/": [
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/DSC03446.webp",
+    "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_145930.webp",
     "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_151433.webp",
     "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_152648.webp",
     "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_152731.webp",
@@ -127,7 +129,8 @@
     "resources/g_adventure/op_day3_port_lockroy_jougla_point/IMG_20260226_153017.webp"
   ],
   "resources/g_adventure/op_day4_antarctic_circle/": [
-    "resources/g_adventure/op_day4_antarctic_circle/photographer_slideshow_b_page_40.webp"
+    "resources/g_adventure/op_day4_antarctic_circle/photographer_slideshow_b_page_40.webp",
+    "resources/g_adventure/op_day4_antarctic_circle/Screenshot_2026-02-27-09-37-23-559_make.more.r2d2.cellular_z.webp"
   ],
   "resources/g_adventure/op_day4_polar_plunge/": [
     "resources/g_adventure/op_day4_polar_plunge/photographer_slideshow_b_page_51.webp",
@@ -178,6 +181,43 @@
     "resources/g_adventure/op_day5_dog_leg_fjord/DSC05140.webp",
     "resources/g_adventure/op_day5_dog_leg_fjord/IMG_20260228_161640.webp",
     "resources/g_adventure/op_day5_dog_leg_fjord/IMG_20260228_193702.webp"
+  ],
+  "resources/g_adventure/op_day6_red_rock_ridge/": [
+    "resources/g_adventure/op_day6_red_rock_ridge/DSC05021.webp",
+    "resources/g_adventure/op_day6_red_rock_ridge/DSC05208.webp",
+    "resources/g_adventure/op_day6_red_rock_ridge/DSC05238.webp",
+    "resources/g_adventure/op_day6_red_rock_ridge/DSC05343.webp",
+    "resources/g_adventure/op_day6_red_rock_ridge/DSC05351.webp",
+    "resources/g_adventure/op_day6_red_rock_ridge/DSC05353.webp",
+    "resources/g_adventure/op_day6_red_rock_ridge/DSC05600.webp",
+    "resources/g_adventure/op_day6_red_rock_ridge/DSC05632.webp",
+    "resources/g_adventure/op_day6_red_rock_ridge/DSC05676.webp",
+    "resources/g_adventure/op_day6_red_rock_ridge/IMG_20260301_112404.webp"
+  ],
+  "resources/g_adventure/op_day6_stonington_island/": [
+    "resources/g_adventure/op_day6_stonington_island/DSC02309.webp",
+    "resources/g_adventure/op_day6_stonington_island/DSC05712.webp",
+    "resources/g_adventure/op_day6_stonington_island/DSC05779.webp",
+    "resources/g_adventure/op_day6_stonington_island/IMG_20260301_134341.webp",
+    "resources/g_adventure/op_day6_stonington_island/IMG_20260301_140304.webp",
+    "resources/g_adventure/op_day6_stonington_island/IMG_20260301_140357.webp",
+    "resources/g_adventure/op_day6_stonington_island/IMG_20260301_140454.webp",
+    "resources/g_adventure/op_day6_stonington_island/IMG_20260301_141401.webp",
+    "resources/g_adventure/op_day6_stonington_island/IMG_20260301_151021.webp",
+    "resources/g_adventure/op_day6_stonington_island/photographer_slideshow_d_page_09.webp",
+    "resources/g_adventure/op_day6_stonington_island/photographer_slideshow_d_page_12.webp"
+  ],
+  "resources/g_adventure/op_day7_detaille_island/": [
+    "resources/g_adventure/op_day7_detaille_island/C0066T01.webp",
+    "resources/g_adventure/op_day7_detaille_island/DSC05719.webp",
+    "resources/g_adventure/op_day7_detaille_island/IMG_20260302_091415.webp",
+    "resources/g_adventure/op_day7_detaille_island/IMG_20260302_100056.webp",
+    "resources/g_adventure/op_day7_detaille_island/IMG_20260302_100316.webp",
+    "resources/g_adventure/op_day7_detaille_island/IMG_20260302_100759.webp",
+    "resources/g_adventure/op_day7_detaille_island/IMG_20260302_101228.webp",
+    "resources/g_adventure/op_day7_detaille_island/IMG_20260302_102258.webp",
+    "resources/g_adventure/op_day7_detaille_island/IMG_20260302_103146.webp",
+    "resources/g_adventure/op_day7_detaille_island/IMG_20260302_105410.webp"
   ],
   "resources/g_adventure/team_members/": [
     "resources/g_adventure/team_members/01_685x609.webp",
