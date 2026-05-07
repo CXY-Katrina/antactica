@@ -227,6 +227,7 @@ body {
 }
 
 .buenos-timeline li {
+  --delay: 0.1s;
   position: relative;
   display: grid;
   grid-template-columns: 16px 1fr;
@@ -725,9 +726,53 @@ body {
   line-height: 1.42;
 }
 
+.operation-day-one .buenos-header p {
+  max-width: 1120px;
+  font-size: 21px;
+  line-height: 1.36;
+}
+
+.operation-day-one .operation-timeline {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.operation-day-one .operation-timeline li {
+  margin-bottom: 24px;
+}
+
+.operation-day-one .operation-timeline p {
+  font-size: 18px;
+  line-height: 1.36;
+}
+
+.operation-day-two .operation-timeline {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.operation-day-two .operation-timeline li {
+  margin-bottom: 18px;
+}
+
+.operation-day-two .operation-timeline p {
+  font-size: 17px;
+  line-height: 1.32;
+}
+
 .operation-photo-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.operation-photo-grid-stacked {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.operation-photo-grid-vertical {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .operation-photo-grid .photo-thumb {
@@ -866,7 +911,7 @@ body {
   z-index: 52;
   width: min(88vw, 1480px);
   height: 82vh;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .gallery-item {
@@ -925,8 +970,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 22vw;
-  min-width: 180px;
+  width: clamp(64px, 6vw, 120px);
   border: 0;
   color: var(--moon-heading);
   font-size: 86px;
