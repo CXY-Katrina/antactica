@@ -1,7 +1,10 @@
-resources/
-
 .chrome-tmp/
 .codex-static-server.*
+
+resources/**/*.mp4
+resources/**/*.webm
+resources/**/*.mov
+resources/**/*.m4v
 
 daily_journal_text.txt
 daily_program_text.txt

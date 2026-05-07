@@ -582,6 +582,15 @@
         backgroundTransition: 'fade'
       });
 
+      var youtubeGalleryMedia = {
+        'resources/day1/la_boca/': [
+          { title: 'La Boca video', youtube: 'YOUTUBE_LA_BOCA_VIDEO_ID' }
+        ],
+        'resources/day2/city_tour/': [
+          { title: 'City Tour video', youtube: 'YOUTUBE_CITY_TOUR_VIDEO_ID' }
+        ]
+      };
+
       function mediaLinksFromDirectory(html, directoryUrl) {
         var doc = new DOMParser().parseFromString(html, 'text/html');
         var links = Array.prototype.slice.call(doc.querySelectorAll('a[href]'));
@@ -590,13 +599,12 @@
             return new URL(link.getAttribute('href'), directoryUrl).href;
           })
           .filter(function(href) {
-            return /\.(jpe?g|png|webp|gif|mp4|webm|mov|m4v)$/i.test(new URL(href).pathname);
+            return /\.(jpe?g|png|webp|gif)$/i.test(new URL(href).pathname);
           })
           .map(function(href) {
-            var pathname = new URL(href).pathname;
             return {
               href: href,
-              type: /\.(mp4|webm|mov|m4v)$/i.test(pathname) ? 'video' : 'image'
+              type: 'image'
             };
           })
           .sort(function(a, b) {
@@ -604,11 +612,48 @@
           });
       }
 
-      function galleryMediaMarkup(media, title) {
-        if (media.type === 'video') {
-          return '<video src="' + media.href + '" controls playsinline preload="metadata"></video>';
+      function youtubeEmbedUrl(youtube, autoplay) {
+        var value = youtube.trim();
+        var videoId = value;
+        var params = autoplay ? '?autoplay=1&playsinline=1&rel=0' : '?playsinline=1&rel=0';
+
+        if (/^https?:\/\//i.test(value)) {
+          try {
+            var url = new URL(value);
+            if (url.hostname.indexOf('youtu.be') !== -1) {
+              videoId = url.pathname.replace(/^\/+/, '');
+            } else if (url.pathname.indexOf('/embed/') === 0) {
+              videoId = url.pathname.split('/embed/')[1].split('/')[0];
+            } else {
+              videoId = url.searchParams.get('v') || videoId;
+            }
+          } catch (error) {
+            videoId = value;
+          }
+        }
+
+        return 'https://www.youtube.com/embed/' + encodeURIComponent(videoId) + params;
+      }
+
+      function galleryMediaMarkup(media, title, autoplay) {
+        if (media.type === 'youtube') {
+          return '<iframe class="youtube-video" src="' + youtubeEmbedUrl(media.youtube, autoplay) + '" title="' + media.title + '" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
         }
         return '<img src="' + media.href + '" alt="' + title + ' 照片">';
+      }
+
+      function stopGalleryMedia(gallery) {
+        if (!gallery) {
+          return;
+        }
+
+        Array.prototype.slice.call(gallery.querySelectorAll('video')).forEach(function(video) {
+          video.pause();
+        });
+
+        Array.prototype.slice.call(gallery.querySelectorAll('iframe.youtube-video')).forEach(function(iframe) {
+          iframe.src = 'about:blank';
+        });
       }
 
       function renderGallery(gallery, index) {
@@ -618,12 +663,12 @@
           return;
         }
 
-        Array.prototype.slice.call(gallery.querySelectorAll('video')).forEach(function(video) {
-          video.pause();
-        });
+        stopGalleryMedia(gallery);
 
         gallery.galleryIndex = (index + media.length) % media.length;
-        frame.innerHTML = '<figure class="gallery-item">' + galleryMediaMarkup(media[gallery.galleryIndex], gallery.dataset.galleryTitle) + '<figcaption>' + gallery.dataset.galleryTitle + ' · ' + (gallery.galleryIndex + 1) + ' / ' + media.length + '</figcaption></figure>';
+        var activeMedia = media[gallery.galleryIndex];
+        var captionTitle = activeMedia.title || gallery.dataset.galleryTitle;
+        frame.innerHTML = '<figure class="gallery-item">' + galleryMediaMarkup(activeMedia, gallery.dataset.galleryTitle, true) + '<figcaption>' + captionTitle + ' · ' + (gallery.galleryIndex + 1) + ' / ' + media.length + '</figcaption></figure>';
       }
 
       function activeGallery() {
@@ -644,10 +689,11 @@
       function setupPhotoGalleries() {
         Array.prototype.slice.call(document.querySelectorAll('.photo-toggle')).forEach(function(toggle) {
           toggle.addEventListener('change', function() {
+            var gallery = toggle.parentElement.querySelector('.photo-gallery');
             if (!toggle.checked) {
-              Array.prototype.slice.call(toggle.parentElement.querySelectorAll('video')).forEach(function(video) {
-                video.pause();
-              });
+              stopGalleryMedia(gallery);
+            } else if (gallery && gallery.galleryMedia && gallery.galleryMedia.length) {
+              renderGallery(gallery, gallery.galleryIndex || 0);
             }
             Reveal.configure({ keyboard: !activeGallery() });
           });
@@ -668,6 +714,14 @@
               });
             })
             .then(function(media) {
+              var youtubeMedia = (youtubeGalleryMedia[dir] || []).map(function(item) {
+                return {
+                  title: item.title || title,
+                  youtube: item.youtube,
+                  type: 'youtube'
+                };
+              });
+              media = media.concat(youtubeMedia);
               gallery.galleryMedia = media;
               gallery.galleryIndex = 0;
 
@@ -686,8 +740,8 @@
                   return item.type === 'image';
                 }) || media[0];
                 thumb.classList.remove('photo-empty');
-                thumb.classList.toggle('video-thumb', cover.type === 'video');
-                thumb.innerHTML = galleryMediaMarkup(cover, title) + '<span>' + media.length + ' Media</span><figcaption>' + title + '</figcaption>';
+                thumb.classList.toggle('video-thumb', cover.type === 'youtube');
+                thumb.innerHTML = galleryMediaMarkup(cover, title, false) + '<span>' + media.length + ' Media</span><figcaption>' + title + '</figcaption>';
               }
 
               renderGallery(gallery, 0);
