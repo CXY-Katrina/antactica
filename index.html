@@ -585,8 +585,8 @@
         backgroundTransition: 'fade'
       });
 
-      var githubGalleryRepository = 'CXY-Katrina/antactica';
-      var githubGalleryBranch = 'main';
+      var galleryManifestUrl = 'resources/gallery-manifest.json';
+      var galleryManifestPromise = null;
 
       function mediaLinksFromDirectory(html, directoryUrl) {
         var doc = new DOMParser().parseFromString(html, 'text/html');
@@ -609,36 +609,42 @@
           });
       }
 
-      function mediaLinksFromGithubDirectory(dir) {
-        var cleanDir = dir.replace(/\/$/, '');
-        var apiUrl = 'https://api.github.com/repos/' + githubGalleryRepository + '/contents/' + cleanDir + '?ref=' + githubGalleryBranch;
+      function galleryManifest() {
+        if (!galleryManifestPromise) {
+          galleryManifestPromise = fetch(galleryManifestUrl, { cache: 'no-store' })
+            .then(function(response) {
+              if (!response.ok) {
+                return {};
+              }
 
-        return fetch(apiUrl)
-          .then(function(response) {
-            if (!response.ok) {
+              return response.json();
+            })
+            .catch(function() {
+              return {};
+            });
+        }
+
+        return galleryManifestPromise;
+      }
+
+      function manifestKeyForDirectory(dir) {
+        return dir.replace(/^\/+/, '').replace(/\/?$/, '/');
+      }
+
+      function imageMediaFromManifest(dir) {
+        return galleryManifest()
+          .then(function(manifest) {
+            var images = manifest[manifestKeyForDirectory(dir)] || [];
+            if (!Array.isArray(images)) {
               return [];
             }
 
-            return response.json();
-          })
-          .then(function(entries) {
-            if (!Array.isArray(entries)) {
-              return [];
-            }
-
-            return entries
-              .filter(function(entry) {
-                return entry.type === 'file' && /\.(jpe?g|png|webp|gif)$/i.test(entry.name);
-              })
-              .map(function(entry) {
-                return {
-                  href: dir + encodeURIComponent(entry.name),
-                  type: 'image'
-                };
-              })
-              .sort(function(a, b) {
-                return a.href.localeCompare(b.href, undefined, { numeric: true, sensitivity: 'base' });
-              });
+            return images.map(function(href) {
+              return {
+                href: href,
+                type: 'image'
+              };
+            });
           })
           .catch(function() {
             return [];
@@ -660,7 +666,7 @@
             return [];
           })
           .then(function(media) {
-            return media.length ? media : mediaLinksFromGithubDirectory(dir);
+            return media.length ? media : imageMediaFromManifest(dir);
           });
       }
 
