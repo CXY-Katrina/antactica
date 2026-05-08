@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/reveal.css">
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.13.3/mapbox-gl.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="css/theme.css?v=20260508-05">
+    <link rel="stylesheet" href="css/theme.css?v=20260508-06">
   </head>
   <body>
     <div class="reveal">
@@ -588,6 +588,9 @@
         <section class="takeaway-slide" data-background-color="#002b36">
           <h2>Takeaway</h2>
         </section>
+        <section class="takeaway-slide" data-background-color="#002b36">
+          <h2>Photo shot by <span class="camera-brand">SONY a7m5</span></h2>
+        </section>
       </div>
     </div>
 
@@ -793,6 +796,34 @@
         return '<img src="' + media.href + '" alt="' + title + ' 照片">';
       }
 
+      function mediaCreditLabel(media) {
+        var source = media ? (media.href || media.youtube || '') : '';
+        var creditedMedia = [
+          { match: 'wechat_20260508135855_4_343.webp', credit: 'Credit to Mark' },
+          { match: 'photographer_slideshow_b_page_51.webp', credit: 'Credit to Mark' },
+          { match: 'photographer_slideshow_b_page_52.webp', credit: 'Credit to Mark' },
+          { match: 'photographer_slideshow_d_page_09.webp', credit: 'Credit to Mark' },
+          { match: 'photographer_slideshow_d_page_12.webp', credit: 'Credit to Mark' },
+          { match: 'MZUssMLwQs8', credit: 'Credit to a fellow passenger' }
+        ];
+        var item = creditedMedia.find(function(creditItem) {
+          return source.indexOf(creditItem.match) !== -1;
+        });
+
+        return item ? item.credit : '';
+      }
+
+      function galleryCaptionMarkup(media, fallbackTitle, indexText) {
+        var captionTitle = media.title || fallbackTitle;
+        var credit = mediaCreditLabel(media);
+        var caption = captionTitle + ' · ' + indexText;
+        if (credit) {
+          caption += '<small>' + credit + '</small>';
+        }
+
+        return caption;
+      }
+
       function stopGalleryMedia(gallery) {
         if (!gallery) {
           return;
@@ -818,8 +849,8 @@
 
         gallery.galleryIndex = (index + media.length) % media.length;
         var activeMedia = media[gallery.galleryIndex];
-        var captionTitle = activeMedia.title || gallery.dataset.galleryTitle;
-        frame.innerHTML = '<figure class="gallery-item">' + galleryMediaMarkup(activeMedia, gallery.dataset.galleryTitle, true) + '<figcaption>' + captionTitle + ' · ' + (gallery.galleryIndex + 1) + ' / ' + media.length + '</figcaption></figure>';
+        var captionMarkup = galleryCaptionMarkup(activeMedia, gallery.dataset.galleryTitle, (gallery.galleryIndex + 1) + ' / ' + media.length);
+        frame.innerHTML = '<figure class="gallery-item">' + galleryMediaMarkup(activeMedia, gallery.dataset.galleryTitle, true) + '<figcaption>' + captionMarkup + '</figcaption></figure>';
       }
 
       function activeGallery() {
