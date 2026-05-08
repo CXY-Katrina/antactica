@@ -840,11 +840,19 @@ body {
 }
 
 .fee-content h2 {
-  margin: 0 0 34px;
+  margin: 0 0 14px;
   color: var(--moon-heading);
   font-size: 80px;
   font-weight: 800;
   line-height: 1;
+}
+
+.fee-note {
+  margin: 0 0 28px;
+  color: var(--moon-selection);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 .fee-list {
